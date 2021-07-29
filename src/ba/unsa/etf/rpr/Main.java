@@ -1,5 +1,6 @@
 package ba.unsa.etf.rpr;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -29,8 +30,7 @@ public class Main {
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "19"));
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "20"));
     }
-
-    public static void ispisArtikala(Artikl[] artikli){
+    private static void ispisArtikala(List<Artikl> artikli) {
         for (Artikl a : artikli) {
             if(a != null) System.out.println("Naziv: " + a.getNaziv() + ", Kod: " + a.getKod() + ", Cijena: " + a.getCijena() + " KM");
         }
@@ -103,4 +103,6 @@ public class Main {
         }
 
     }
+
+
 }
